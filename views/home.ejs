@@ -3,8 +3,12 @@
 <h1>Home</h1>
 
 <p> <%= homeStartingContent %> </p>
-    
-    <% console.log(posts) %>
+
+<%  posts.forEach(function(post){%>
+
+<h2> <%= post.title %> </h2>
+<p> <%= post.content %> </p>
+<% }); %>
 
 <%- include partials/_footer.ejs %>
 
